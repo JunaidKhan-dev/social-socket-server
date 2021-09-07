@@ -21,7 +21,6 @@ const registerController = async (req, res) => {
 
   try {
     await user.save()
-    console.log({ user })
     return res.json({
       ok: true,
     })
